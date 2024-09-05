@@ -1,0 +1,12 @@
+version: '3'
+tasks:
+  test:
+    cmd: go test -v ./...
+    desc: test all app
+  push:
+    deps: [test]
+    desc: push to github
+    cmds:
+      - git add .
+      - git commit -m "{{.CLI_ARGS}}"
+      - git push
