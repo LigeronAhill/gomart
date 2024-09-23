@@ -1,0 +1,19 @@
+type: object
+required:
+  - offerMappings
+properties:
+  offerMappings:
+    description: Перечень товаров, которые нужно добавить или обновить.
+    type: array
+    minItems: 1
+    maxItems: 500
+    items:
+      $ref: ./UpdateOfferMappingDTO.yaml
+  onlyPartnerMediaContent:
+    description: >
+      Будут использоваться только переданные вами изображения товаров.
+
+
+      Значение по умолчанию — `false`. Если вы хотите заменить изображения,
+      которые добавил Маркет, передайте значение `true`.
+    type: boolean

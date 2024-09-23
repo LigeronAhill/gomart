@@ -1,0 +1,9 @@
+description: |
+  Тип автора:
+
+  * `USER` — пользователь.
+  * `SHOP` — магазин.
+type: string
+enum:
+  - USER
+  - SHOP

@@ -1,0 +1,13 @@
+description: Информация о параметрах категории.
+type: object
+required:
+  - categoryId
+properties:
+  categoryId:
+    $ref: ./CategoryId.yaml
+  parameters:
+    description: Список характеристик.
+    type: array
+    nullable: true
+    items:
+      $ref: ./CategoryParameterDTO.yaml
