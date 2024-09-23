@@ -1,1 +1,6 @@
 .env
+yandex-market-partner-api
+.ignore
+/rest
+rest/
+rest

@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/LigeronAhill/gomart/internal/models"
+	"github.com/LigeronAhill/gomart/models"
 )
 
 // <http_method> https://api.partner.market.yandex.ru/<resource>.<format>?<parameters>
